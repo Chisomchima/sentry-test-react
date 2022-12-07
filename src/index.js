@@ -7,11 +7,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 Sentry.init({
-  dsn: "https://examplePublicKey@o0.ingest.sentry.io/0",
+  dsn: "https://60508dc269034a6eb1ce661efb030cb6@o4504282743635968.ingest.sentry.io/4504282755891200",
   integrations: [new BrowserTracing()],
-  sendClientReports: false,
-  // We recommend adjusting this value in production, or using tracesSampler
-  // for finer control
+
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
 });
 

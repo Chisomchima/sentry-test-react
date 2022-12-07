@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // const methodDoesNotExist = () => {
+  //   console.log('chisom')
+  // }
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => methodDoesNotExist()}>Break the world</button>
       </header>
     </div>
   );
